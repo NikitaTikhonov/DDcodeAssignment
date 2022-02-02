@@ -100,15 +100,15 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 24,
-    fontWeight: '600',
+    fontFamily: 'PublicSans-SemiBold',
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
-    fontWeight: '400',
+    fontFamily: 'PublicSans-Medium',
   },
   highlight: {
-    fontWeight: '700',
+    fontFamily: 'PublicSans-Bold',
   },
 });
 
