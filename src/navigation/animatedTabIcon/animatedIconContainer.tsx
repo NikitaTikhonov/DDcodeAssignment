@@ -1,20 +1,20 @@
-import React, {useRef} from 'react';
-import {Animated, Easing} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+import React, { useRef } from 'react'
+import { Animated, Easing } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
-import {AnimatedIconComponent} from './animatedIconComponent';
-import {AnimatedIconTypes, getFilters, getSource} from './animatedTabIcon.vm';
-import {MainTabNavigatorNavProp} from '../mainTab.navigator';
+import { AnimatedIconComponent } from './animatedIconComponent'
+import { AnimatedIconTypes, getFilters, getSource } from './animatedTabIcon.vm'
+import { MainTabNavigatorNavProp } from '../mainTab.navigator'
 
 interface AnimatedIconContainerProps {
-  focused: boolean;
-  type: AnimatedIconTypes;
+  focused: boolean
+  type: AnimatedIconTypes
 }
 
 export const AnimatedIconContainer = React.memo(
-  ({focused, type}: AnimatedIconContainerProps): JSX.Element => {
-    const animation = useRef(new Animated.Value(0)).current;
-    const navigation = useNavigation<MainTabNavigatorNavProp>();
+  ({ focused, type }: AnimatedIconContainerProps): JSX.Element => {
+    const animation = useRef(new Animated.Value(0)).current
+    const navigation = useNavigation<MainTabNavigatorNavProp>()
 
     React.useEffect(() => {
       const show = () => {
@@ -23,15 +23,15 @@ export const AnimatedIconContainer = React.memo(
           duration: 1000,
           easing: Easing.ease,
           useNativeDriver: true,
-        }).start();
-      };
+        }).start()
+      }
       const unsubscribe = navigation.addListener('tabPress', () => {
-        animation.setValue(0);
-        show();
-      });
+        animation.setValue(0)
+        show()
+      })
 
-      return unsubscribe;
-    }, [navigation, animation]);
+      return unsubscribe
+    }, [navigation, animation])
 
     return (
       <AnimatedIconComponent
@@ -39,6 +39,6 @@ export const AnimatedIconContainer = React.memo(
         source={getSource(type)}
         colorFilters={getFilters(type)(focused)}
       />
-    );
+    )
   },
-);
+)

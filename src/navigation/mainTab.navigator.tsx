@@ -1,24 +1,24 @@
-import React from 'react';
+import React from 'react'
 import {
   BottomTabNavigationProp,
   createBottomTabNavigator,
-} from '@react-navigation/bottom-tabs';
-import {HomeContainer, HOME_ROUTE} from '../containers/home/homeContainer';
+} from '@react-navigation/bottom-tabs'
+import { HomeContainer, HOME_ROUTE } from '../containers/home/homeContainer'
 import {
   FallbackContainer,
   FALLBACK_ROUTE,
-} from '../containers/fallback/fallbackContainer';
-import {AnimatedIconContainer} from './animatedTabIcon/animatedIconContainer';
-import {AnimatedIconTypes} from './animatedTabIcon/animatedTabIcon.vm';
+} from '../containers/fallback/fallbackContainer'
+import { AnimatedIconContainer } from './animatedTabIcon/animatedIconContainer'
+import { AnimatedIconTypes } from './animatedTabIcon/animatedTabIcon.vm'
 
 export type MainTabList = {
-  [HOME_ROUTE]: undefined;
-  [FALLBACK_ROUTE]: undefined;
-};
+  [HOME_ROUTE]: undefined
+  [FALLBACK_ROUTE]: undefined
+}
 
-export type MainTabNavigatorNavProp = BottomTabNavigationProp<MainTabList>;
+export type MainTabNavigatorNavProp = BottomTabNavigationProp<MainTabList>
 
-const Tab = createBottomTabNavigator<MainTabList>();
+const Tab = createBottomTabNavigator<MainTabList>()
 
 export const MainTabNavigator = (): JSX.Element => {
   return (
@@ -34,6 +34,7 @@ export const MainTabNavigator = (): JSX.Element => {
               type={AnimatedIconTypes.Home}
             />
           ),
+          headerShown: false,
         }}
       />
       <Tab.Screen
@@ -50,5 +51,5 @@ export const MainTabNavigator = (): JSX.Element => {
         }}
       />
     </Tab.Navigator>
-  );
-};
+  )
+}

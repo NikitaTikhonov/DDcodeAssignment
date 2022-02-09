@@ -1,21 +1,55 @@
-import React from 'react';
-import {StyleSheet, SafeAreaView} from 'react-native';
-import {Heading} from '../../components/headingText';
-import {theme} from '../../theme/theme';
+import React from 'react'
+import { StyleSheet } from 'react-native'
+import Animated, {
+  Extrapolate,
+  interpolate,
+  useAnimatedScrollHandler,
+  useAnimatedStyle,
+  useSharedValue,
+} from 'react-native-reanimated'
+import BodyComponent from './bodyComponent'
+import HeaderComponent from './headerComponent'
+import { HEADER_HEIGHT } from '../../utils/constants'
+import { theme } from '../../theme/theme'
 
 export const HomeComponent = (): JSX.Element => {
-  return (
-    <SafeAreaView style={style.container}>
-      <Heading text="Hello World GG" fontSize={16} />
-    </SafeAreaView>
-  );
-};
+  const scrollClamp = useSharedValue(0)
 
-const style = StyleSheet.create({
-  container: {
+  const scrollHandler = useAnimatedScrollHandler({
+    onScroll: event => {
+      scrollClamp.value = event.contentOffset.y
+    },
+  })
+
+  const animatedMargin = useAnimatedStyle(() => {
+    const interpolateY = interpolate(
+      scrollClamp.value,
+      [0, HEADER_HEIGHT],
+      [0, HEADER_HEIGHT],
+      Extrapolate.CLAMP,
+    )
+
+    return {
+      marginTop: interpolateY,
+    }
+  })
+
+  return (
+    <Animated.ScrollView
+      bounces={false}
+      showsVerticalScrollIndicator={false}
+      scrollEventThrottle={16}
+      style={styles.main}
+      onScroll={scrollHandler}>
+      <HeaderComponent style={animatedMargin} />
+      <BodyComponent />
+    </Animated.ScrollView>
+  )
+}
+
+const styles = StyleSheet.create({
+  main: {
     flex: 1,
-    backgroundColor: theme.primary,
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: theme.headerMain,
   },
-});
+})
