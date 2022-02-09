@@ -9,7 +9,7 @@ import Animated, {
 } from 'react-native-reanimated'
 import BodyComponent from './bodyComponent'
 import HeaderComponent from './headerComponent'
-import { HEADER_HEIGHT } from '../../utils/constants'
+import { HEADER_HEIGHT, isIOS } from '../../utils/constants'
 import { theme } from '../../theme/theme'
 
 export const HomeComponent = (): JSX.Element => {
@@ -36,7 +36,6 @@ export const HomeComponent = (): JSX.Element => {
 
   return (
     <Animated.ScrollView
-      bounces={false}
       showsVerticalScrollIndicator={false}
       scrollEventThrottle={16}
       style={styles.main}
@@ -50,6 +49,6 @@ export const HomeComponent = (): JSX.Element => {
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor: theme.headerMain,
+    backgroundColor: isIOS ? theme.white : theme.headerMain,
   },
 })

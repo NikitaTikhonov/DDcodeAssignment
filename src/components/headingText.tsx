@@ -14,7 +14,7 @@ export const Heading = ({ fontSize, text }: HeadingProps): JSX.Element => (
 const styles = StyleSheet.create({
   main: {
     fontFamily: 'PublicSans-SemiBold',
-    color: theme.white,
+    color: theme.dark,
     paddingBottom: 50,
   },
 })

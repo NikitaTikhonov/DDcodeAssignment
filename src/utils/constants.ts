@@ -1,5 +1,7 @@
-import { Platform, StatusBar } from 'react-native'
+import { Platform } from 'react-native'
+import { getStatusBarHeight } from 'react-native-status-bar-height'
 
-const androidStatusBarHeight = StatusBar.currentHeight ?? 0
-const isIOS = Platform.OS === 'ios'
-export const HEADER_HEIGHT = isIOS ? 110 : 70 + androidStatusBarHeight
+export const isIOS = Platform.OS === 'ios'
+export const HEADER_HEIGHT = isIOS
+  ? 120 + getStatusBarHeight()
+  : 80 + getStatusBarHeight()
