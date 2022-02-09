@@ -1,8 +1,8 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import Animated, { useAnimatedStyle } from 'react-native-reanimated'
-import { getStatusBarHeight } from 'react-native-status-bar-height'
 import { Heading } from '../../components/headingText'
+import IconButton from '../../components/iconButton'
 import { currentDayName, greeting } from '../../services/date'
 import { theme } from '../../theme/theme'
 import { HEADER_HEIGHT } from '../../utils/constants'
@@ -12,14 +12,18 @@ interface Props {
 }
 
 const HeaderComponent = ({ style }: Props) => {
-  console.log(getStatusBarHeight())
-
   return (
     <Animated.View style={[styles.container, style]}>
-      <View>
-        <Text>{currentDayName()}</Text>
+      <View style={styles.mainContent}>
+        <View style={styles.iconsRow}>
+          <Text style={styles.day}>{currentDayName()}</Text>
+          <View style={styles.iconGroup}>
+            <IconButton />
+            <IconButton />
+          </View>
+        </View>
+        <Heading text={greeting()} fontSize={32} />
       </View>
-      <Heading text={greeting()} fontSize={32} />
     </Animated.View>
   )
 }
@@ -28,18 +32,34 @@ export default HeaderComponent
 
 const styles = StyleSheet.create({
   container: {
-    position: 'absolute',
-    height: HEADER_HEIGHT + 40,
-    paddingBottom: 20,
-    paddingTop: getStatusBarHeight(true),
+    height: HEADER_HEIGHT,
     backgroundColor: theme.headerMain,
-    top: 0,
-    left: 0,
-    right: 0,
-    zIndex: 0,
-    elevation: 0,
-    justifyContent: 'space-between',
+    marginTop: 30,
+  },
+  mainContent: {
+    minHeight: HEADER_HEIGHT,
+    height: HEADER_HEIGHT,
+    backgroundColor: theme.headerMain,
+    flex: 1,
     alignItems: 'center',
+    justifyContent: 'space-around',
+  },
+  iconsRow: {
+    width: '100%',
+    paddingHorizontal: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  day: {
+    textAlign: 'right',
+    backgroundColor: 'pink',
+  },
+  iconGroup: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    flexWrap: 'nowrap',
+    width: 70,
   },
   text: {
     color: 'black',

@@ -15,6 +15,5 @@ const styles = StyleSheet.create({
   main: {
     fontFamily: 'PublicSans-SemiBold',
     color: theme.dark,
-    paddingBottom: 50,
   },
 })

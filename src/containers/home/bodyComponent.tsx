@@ -1,27 +1,45 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 import { Heading } from '../../components/headingText'
+import IconButton from '../../components/iconButton'
 import { currentDayName, greeting } from '../../services/date'
 import { theme } from '../../theme/theme'
-import { HEADER_HEIGHT } from '../../utils/constants'
 
 const BodyComponent = (): JSX.Element => {
   return (
-    <View style={styles.shadowHider}>
-      <View style={styles.main}>
+    <View style={styles.main}>
+      <View style={{ height: 250 }}>
         <Heading text={greeting()} fontSize={16} />
         <Heading text={currentDayName()} fontSize={16} />
+        <IconButton />
+      </View>
+      <Heading text="Hello World 4" fontSize={16} />
+      <IconButton />
+      <View style={{ height: 250 }}>
+        <Heading text={greeting()} fontSize={16} />
+        <Heading text={currentDayName()} fontSize={16} />
+        <IconButton />
         <Heading text="Hello World 4" fontSize={16} />
-        <Heading text="Hello World 5" fontSize={16} />
-        <Heading text="Hello World GG" fontSize={16} />
-        <Heading text="Hello World GG" fontSize={16} />
-        <Heading text="Hello World GG" fontSize={16} />
-        <Heading text="Hello World GG" fontSize={22} />
-        <Heading text="Hello World GG" fontSize={16} />
-        <Heading text="Hello World GG" fontSize={16} />
-        <Heading text="Hello World GG" fontSize={33} />
-        <Heading text="Hello World GG" fontSize={16} />
-        <Heading text="Hello World LAST" fontSize={90} />
+        <IconButton />
+      </View>
+      <Heading text={greeting()} fontSize={16} />
+      <View style={{ height: 250 }}>
+        <Heading text={currentDayName()} fontSize={16} />
+        <IconButton />
+        <Heading text="Hello World 4" fontSize={16} />
+        <IconButton />
+      </View>
+      <View style={{ height: 250 }}>
+        <Heading text={currentDayName()} fontSize={16} />
+        <IconButton />
+        <Heading text="Hello World 4" fontSize={16} />
+        <IconButton />
+      </View>
+      <View style={{ height: 250 }}>
+        <Heading text={currentDayName()} fontSize={16} />
+        <IconButton />
+        <Heading text="Hello World 4" fontSize={16} />
+        <IconButton />
       </View>
     </View>
   )
@@ -30,8 +48,7 @@ const BodyComponent = (): JSX.Element => {
 const styles = StyleSheet.create({
   main: {
     borderTopLeftRadius: 30,
-    paddingLeft: 10,
-    marginTop: HEADER_HEIGHT,
+    paddingHorizontal: 10,
     backgroundColor: theme.white,
     paddingTop: 20,
     elevation: 4,
@@ -43,6 +60,7 @@ const styles = StyleSheet.create({
   shadowHider: {
     overflow: 'hidden',
     paddingTop: 5,
+    zIndex: 1,
   },
 })
 
