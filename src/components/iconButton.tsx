@@ -3,7 +3,7 @@ import React from 'react'
 
 import { theme } from '../theme/theme'
 
-const IconButton = () => {
+const IconButton = (): JSX.Element => {
   return (
     <TouchableOpacity
       style={styles.container}
@@ -18,8 +18,8 @@ export default IconButton
 const styles = StyleSheet.create({
   container: {
     zIndex: 1,
-    width: 30,
-    height: 30,
+    width: 40,
+    height: 40,
     justifyContent: 'center',
     alignItems: 'center',
 

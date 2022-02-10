@@ -24,7 +24,7 @@ export const HomeComponent = (): JSX.Element => {
   const animatedMargin = useAnimatedStyle(() => {
     const interpolateY = interpolate(
       scrollClamp.value,
-      [0, HEADER_HEIGHT],
+      [10, HEADER_HEIGHT * 1.1],
       [0, HEADER_HEIGHT],
       Extrapolate.CLAMP,
     )

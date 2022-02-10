@@ -6,7 +6,12 @@ import { Heading } from '../../components/headingText'
 import IconButton from '../../components/iconButton'
 import { currentDayName, greeting } from '../../services/date'
 import { theme } from '../../theme/theme'
-import { HEADER_HEIGHT, HEADER_HEIGHT_MULTIPLIER } from '../../utils/constants'
+import {
+  HEADER_HEIGHT,
+  HEADER_HEIGHT_MULTIPLIER,
+  isIOS,
+} from '../../utils/constants'
+import IconBar from './iconBar'
 
 interface Props {
   style: ReturnType<typeof useAnimatedStyle>
@@ -17,13 +22,22 @@ const HeaderComponent = ({ style }: Props) => {
     <Animated.View style={[styles.container, style]}>
       <View style={styles.mainContent}>
         <View style={styles.iconsRow}>
+          <View style={styles.placeholder} />
           <Text style={styles.day}>{currentDayName()}</Text>
           <View style={styles.iconGroup}>
-            <IconButton />
-            <IconButton />
+            <IconBar />
           </View>
         </View>
-        <Heading text={greeting()} fontSize={32} />
+        <View
+          style={{
+            alignItems: 'flex-start',
+            justifyContent: 'flex-start',
+            flexDirection: 'row',
+            width: '100%',
+            paddingBottom: 25,
+          }}>
+          <Text style={styles.text}>{greeting()}</Text>
+        </View>
       </View>
     </Animated.View>
   )
@@ -40,30 +54,38 @@ const styles = StyleSheet.create({
     minHeight: HEADER_HEIGHT,
     height: HEADER_HEIGHT,
     backgroundColor: theme.headerMain,
+    paddingHorizontal: 10,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-around',
   },
   iconsRow: {
     width: '100%',
-    paddingTop: getStatusBarHeight() * 0.8,
-    paddingHorizontal: 10,
+    paddingTop: isIOS ? getStatusBarHeight() : 10,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
+  placeholder: {
+    flex: 1,
+  },
   day: {
-    textAlign: 'right',
-    backgroundColor: 'pink',
+    flex: 1,
+    textAlign: 'center',
+    textTransform: 'uppercase',
+    letterSpacing: 1.2,
+    fontFamily: 'PublicSans-SemiBold',
   },
   iconGroup: {
+    flex: 1,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     flexWrap: 'nowrap',
-    width: 70,
   },
   text: {
-    color: 'black',
-    fontSize: 30,
+    color: theme.dark,
+    fontSize: 34,
+    letterSpacing: 1.3,
+    fontFamily: 'PublicSans-SemiBold',
   },
 })
