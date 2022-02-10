@@ -6,6 +6,8 @@ import {
   Text,
   Dimensions,
   ImageSourcePropType,
+  StyleProp,
+  ViewStyle,
 } from 'react-native'
 import React from 'react'
 import { theme } from '../../theme/theme'
@@ -18,6 +20,7 @@ interface Props {
   label: string
   onPress: () => void
   background: ImageSourcePropType
+  extraStyle?: StyleProp<ViewStyle>
 }
 
 const RealResultsComponent = ({
@@ -26,6 +29,7 @@ const RealResultsComponent = ({
   label,
   background,
   onPress,
+  extraStyle,
 }: Props): JSX.Element => {
   return (
     <TouchableOpacity
@@ -34,7 +38,7 @@ const RealResultsComponent = ({
       onPress={onPress}>
       <ImageBackground
         imageStyle={styles.imageStyle}
-        style={styles.container}
+        style={[styles.container, extraStyle]}
         source={background}>
         <View style={styles.content}>
           <Label text={label} />

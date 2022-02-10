@@ -21,7 +21,7 @@ const BodyComponent = (): JSX.Element => {
           containerStyle={styles.visualGuidesSection}>
           <VisualGuidesList />
         </HomepageSection>
-        <View style={{ marginTop: 60 }}>
+        <View style={{ marginTop: 60, paddingHorizontal: 10 }}>
           <SurveyContainer />
         </View>
         <HomepageSection
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'space-evenly',
     borderTopLeftRadius: 30,
-    paddingHorizontal: 10,
+
     backgroundColor: theme.white,
     paddingTop: 20,
     elevation: 4,

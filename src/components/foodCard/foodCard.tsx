@@ -1,9 +1,11 @@
 import {
   Image,
   ImageSourcePropType,
+  StyleProp,
   StyleSheet,
   Text,
   TouchableOpacity,
+  ViewStyle,
 } from 'react-native'
 import React from 'react'
 import { theme } from '../../theme/theme'
@@ -12,13 +14,14 @@ export interface Props {
   image: ImageSourcePropType
   title: string
   onPress: () => void
+  extraStyle?: StyleProp<ViewStyle>
 }
 
-const FoodCard = ({ image, title, onPress }: Props) => {
+const FoodCard = ({ image, title, onPress, extraStyle }: Props) => {
   return (
     <TouchableOpacity
       onPress={onPress}
-      style={styles.container}
+      style={[styles.container, extraStyle]}
       activeOpacity={0.6}>
       <Image source={image} style={styles.image} />
       <Text style={styles.text}>{title}</Text>

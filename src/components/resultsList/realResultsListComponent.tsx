@@ -1,4 +1,4 @@
-import { FlatList, ListRenderItem } from 'react-native'
+import { FlatList, ListRenderItem, StyleSheet } from 'react-native'
 import React from 'react'
 import RealResultsContainer from '../realResults/realResultsContainer'
 import { Result } from '../../models/result'
@@ -9,9 +9,18 @@ interface Props {
 }
 
 const renderResult: ListRenderItem<Result> = result => {
-  result.item
-  return <RealResultsContainer onPress={() => undefined} {...result.item} />
+  if (result.index === 1) {
+    return <RealResultsContainer onPress={() => undefined} {...result.item} />
+  }
+  return (
+    <RealResultsContainer
+      onPress={() => undefined}
+      {...result.item}
+      extraStyle={styles.extraMargin}
+    />
+  )
 }
+
 const renderSeparator = () => <HorizontalListSeparator width={20} />
 
 //TODO: implement carousel behavior
@@ -26,5 +35,11 @@ const RealResultsListComponent = ({ results }: Props) => {
     />
   )
 }
+
+const styles = StyleSheet.create({
+  extraMargin: {
+    marginLeft: 10,
+  },
+})
 
 export default RealResultsListComponent

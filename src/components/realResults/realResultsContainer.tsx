@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImageSourcePropType } from 'react-native'
+import { ImageSourcePropType, StyleProp, ViewStyle } from 'react-native'
 import RealResultsComponent from './realResultsComponent'
 
 // const background = require('../../../assets/images/person1.jpg')
@@ -12,6 +12,7 @@ interface Props {
   achievement: string
   onPress: () => void
   background: ImageSourcePropType
+  extraStyle?: StyleProp<ViewStyle>
 }
 
 const RealResultsContainer = ({
@@ -19,8 +20,10 @@ const RealResultsContainer = ({
   achievement,
   onPress,
   background,
+  extraStyle,
 }: Props): JSX.Element => (
   <RealResultsComponent
+    extraStyle={extraStyle}
     headingText={headingText}
     achievement={achievement}
     label={label}

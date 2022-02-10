@@ -1,4 +1,4 @@
-import { FlatList, ListRenderItem } from 'react-native'
+import { ListRenderItem, FlatList, StyleSheet } from 'react-native'
 import React from 'react'
 import HorizontalListSeparator from './horizontalListSeparator'
 import FoodCard, { Props } from './foodCard/foodCard'
@@ -24,7 +24,9 @@ const guides: Array<Props> = [
 const renderSeparator = () => <HorizontalListSeparator width={20} />
 
 const renderResult: ListRenderItem<Props> = result => {
-  result.item
+  if (result.index === 0) {
+    return <FoodCard {...result.item} extraStyle={styles.extraMargin} />
+  }
   return <FoodCard {...result.item} />
 }
 
@@ -39,5 +41,11 @@ const GuidesList = () => {
     />
   )
 }
+
+const styles = StyleSheet.create({
+  extraMargin: {
+    marginLeft: 10,
+  },
+})
 
 export default GuidesList
