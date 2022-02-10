@@ -1,14 +1,18 @@
-import { StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { StyleSheet, TouchableOpacity } from 'react-native'
+
 import React from 'react'
 
 import { theme } from '../theme/theme'
 
-const IconButton = (): JSX.Element => {
+interface Props {
+  onPress: () => void
+  icon: JSX.Element
+}
+
+const IconButton = ({ onPress, icon }: Props): JSX.Element => {
   return (
-    <TouchableOpacity
-      style={styles.container}
-      onPress={() => console.log('AA')}>
-      <Text>Id</Text>
+    <TouchableOpacity style={styles.container} onPress={onPress}>
+      {icon}
     </TouchableOpacity>
   )
 }
