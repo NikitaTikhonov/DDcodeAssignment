@@ -8,4 +8,6 @@ export const theme = {
   lightBlue: '#E4ECF0',
   lightGrayGreen: '#E9EEEB',
   lightGreen: '#EDF8F4',
+  semitransparentDark: '#00000080',
+  yellow: '#fef84c',
 }

@@ -3,11 +3,15 @@ import { StyleSheet, View } from 'react-native'
 import FoodCardContainer, {
   CardType,
 } from '../../components/foodCard/foodCardContainer'
+import RealResultsListContainer from '../../components/resultsList/realResultsListContainer'
 import SurveyContainer from '../../components/survey/surveyContainer'
 import { theme } from '../../theme/theme'
+import HomepageSection from './homepageSection'
 
 const image = require('../../../assets/images/vegetables.jpeg')
 const avocado = require('../../../assets/images/avocado.png')
+
+const resultsHeader = 'Real people, real\results'
 
 const BodyComponent = (): JSX.Element => {
   return (
@@ -35,6 +39,11 @@ const BodyComponent = (): JSX.Element => {
           backgroundColor={theme.lightGreen}
           title={'Keto Guide'}
         />
+        <HomepageSection
+          title={resultsHeader}
+          containerStyle={styles.resultSection}>
+          <RealResultsListContainer />
+        </HomepageSection>
       </View>
     </View>
   )
@@ -54,12 +63,17 @@ const styles = StyleSheet.create({
     shadowOffset: { width: -2, height: 4 },
     shadowOpacity: 0.2,
     shadowRadius: 3,
+    paddingBottom: 20,
   },
   shadowHider: {
     overflow: 'hidden',
     paddingTop: 1,
 
     backgroundColor: theme.headerMain,
+  },
+  resultSection: {
+    marginTop: 60,
+    height: 480,
   },
 })
 
