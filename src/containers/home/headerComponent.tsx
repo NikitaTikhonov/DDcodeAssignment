@@ -1,11 +1,12 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import Animated, { useAnimatedStyle } from 'react-native-reanimated'
+import { getStatusBarHeight } from 'react-native-status-bar-height'
 import { Heading } from '../../components/headingText'
 import IconButton from '../../components/iconButton'
 import { currentDayName, greeting } from '../../services/date'
 import { theme } from '../../theme/theme'
-import { HEADER_HEIGHT } from '../../utils/constants'
+import { HEADER_HEIGHT, HEADER_HEIGHT_MULTIPLIER } from '../../utils/constants'
 
 interface Props {
   style: ReturnType<typeof useAnimatedStyle>
@@ -32,9 +33,8 @@ export default HeaderComponent
 
 const styles = StyleSheet.create({
   container: {
-    height: HEADER_HEIGHT,
+    height: HEADER_HEIGHT * HEADER_HEIGHT_MULTIPLIER,
     backgroundColor: theme.headerMain,
-    marginTop: 30,
   },
   mainContent: {
     minHeight: HEADER_HEIGHT,
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
   },
   iconsRow: {
     width: '100%',
+    paddingTop: getStatusBarHeight() * 0.8,
     paddingHorizontal: 10,
     flexDirection: 'row',
     alignItems: 'center',

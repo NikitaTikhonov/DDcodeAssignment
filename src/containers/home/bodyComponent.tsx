@@ -7,39 +7,41 @@ import { theme } from '../../theme/theme'
 
 const BodyComponent = (): JSX.Element => {
   return (
-    <View style={styles.main}>
-      <View style={{ height: 250 }}>
+    <View style={styles.shadowHider}>
+      <View style={styles.main}>
+        <View style={{ height: 250 }}>
+          <Heading text={greeting()} fontSize={16} />
+          <Heading text={currentDayName()} fontSize={16} />
+          <IconButton />
+        </View>
+        <Heading text="Hello World 4" fontSize={16} />
+        <IconButton />
+        <View style={{ height: 250 }}>
+          <Heading text={greeting()} fontSize={16} />
+          <Heading text={currentDayName()} fontSize={16} />
+          <IconButton />
+          <Heading text="Hello World 4" fontSize={16} />
+          <IconButton />
+        </View>
         <Heading text={greeting()} fontSize={16} />
-        <Heading text={currentDayName()} fontSize={16} />
-        <IconButton />
-      </View>
-      <Heading text="Hello World 4" fontSize={16} />
-      <IconButton />
-      <View style={{ height: 250 }}>
-        <Heading text={greeting()} fontSize={16} />
-        <Heading text={currentDayName()} fontSize={16} />
-        <IconButton />
-        <Heading text="Hello World 4" fontSize={16} />
-        <IconButton />
-      </View>
-      <Heading text={greeting()} fontSize={16} />
-      <View style={{ height: 250 }}>
-        <Heading text={currentDayName()} fontSize={16} />
-        <IconButton />
-        <Heading text="Hello World 4" fontSize={16} />
-        <IconButton />
-      </View>
-      <View style={{ height: 250 }}>
-        <Heading text={currentDayName()} fontSize={16} />
-        <IconButton />
-        <Heading text="Hello World 4" fontSize={16} />
-        <IconButton />
-      </View>
-      <View style={{ height: 250 }}>
-        <Heading text={currentDayName()} fontSize={16} />
-        <IconButton />
-        <Heading text="Hello World 4" fontSize={16} />
-        <IconButton />
+        <View style={{ height: 250 }}>
+          <Heading text={currentDayName()} fontSize={16} />
+          <IconButton />
+          <Heading text="Hello World 4" fontSize={16} />
+          <IconButton />
+        </View>
+        <View style={{ height: 250 }}>
+          <Heading text={currentDayName()} fontSize={16} />
+          <IconButton />
+          <Heading text="Hello World 4" fontSize={16} />
+          <IconButton />
+        </View>
+        <View style={{ height: 250 }}>
+          <Heading text={currentDayName()} fontSize={16} />
+          <IconButton />
+          <Heading text="Hello World 4" fontSize={16} />
+          <IconButton />
+        </View>
       </View>
     </View>
   )
@@ -59,8 +61,9 @@ const styles = StyleSheet.create({
   },
   shadowHider: {
     overflow: 'hidden',
-    paddingTop: 5,
-    zIndex: 1,
+    paddingTop: 1,
+
+    backgroundColor: theme.headerMain,
   },
 })
 

@@ -9,10 +9,9 @@ import Animated, {
 } from 'react-native-reanimated'
 import BodyComponent from './bodyComponent'
 import HeaderComponent from './headerComponent'
-import { HEADER_HEIGHT, SCROLL_MULTIPLIER } from '../../utils/constants'
+import { HEADER_HEIGHT } from '../../utils/constants'
 import { theme } from '../../theme/theme'
-import { getStatusBarHeight } from 'react-native-status-bar-height'
-const minPadding = getStatusBarHeight()
+
 export const HomeComponent = (): JSX.Element => {
   const scrollClamp = useSharedValue(0)
 
@@ -37,7 +36,7 @@ export const HomeComponent = (): JSX.Element => {
 
   return (
     <Animated.ScrollView
-      bounces={false}
+      bounces={true}
       showsVerticalScrollIndicator={false}
       scrollEventThrottle={16}
       style={styles.main}
@@ -51,6 +50,6 @@ export const HomeComponent = (): JSX.Element => {
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor: theme.headerMain,
+    backgroundColor: theme.white,
   },
 })
