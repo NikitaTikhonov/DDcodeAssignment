@@ -1,4 +1,4 @@
-import { ImageSourcePropType, StyleSheet } from 'react-native'
+import { ImageSourcePropType } from 'react-native'
 import React from 'react'
 import RectFoodCardComponent from './rectFoodCardComponent'
 import FoodCardComponent from './foodCardComponent'
@@ -23,4 +23,4 @@ const FoodCardContainer = ({ variant, ...rest }: Props): JSX.Element => {
   }
 }
 
-export default FoodCardContainer
+export default React.memo(FoodCardContainer)

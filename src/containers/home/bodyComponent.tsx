@@ -3,9 +3,7 @@ import { StyleSheet, View } from 'react-native'
 import FoodCardContainer, {
   CardType,
 } from '../../components/foodCard/foodCardContainer'
-import { Heading } from '../../components/headingText'
-import IconButton from '../../components/iconButton'
-import { currentDayName, greeting } from '../../services/date'
+import SurveyContainer from '../../components/survey/surveyContainer'
 import { theme } from '../../theme/theme'
 
 const image = require('../../../assets/images/vegetables.jpeg')
@@ -22,6 +20,15 @@ const BodyComponent = (): JSX.Element => {
           title={'Vegetables'}
         />
         <View style={{ height: 30 }} />
+        <SurveyContainer />
+        <View style={{ height: 30 }} />
+        <FoodCardContainer
+          variant={CardType.Square}
+          image={avocado}
+          backgroundColor={theme.lightGreen}
+          title={'Keto Guide'}
+        />
+
         <FoodCardContainer
           variant={CardType.Square}
           image={avocado}

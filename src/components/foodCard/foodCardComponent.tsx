@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
 } from 'react-native'
 import React from 'react'
-import { theme } from '../../theme/theme'
 
 interface Props {
   backgroundColor: string
