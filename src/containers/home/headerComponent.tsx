@@ -2,8 +2,6 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import Animated, { useAnimatedStyle } from 'react-native-reanimated'
 import { getStatusBarHeight } from 'react-native-status-bar-height'
-import { Heading } from '../../components/headingText'
-import IconButton from '../../components/iconButton'
 import { currentDayName, greeting } from '../../services/date'
 import { theme } from '../../theme/theme'
 import {
@@ -16,7 +14,7 @@ import IconBar from './iconBar'
 interface Props {
   style: ReturnType<typeof useAnimatedStyle>
 }
-
+//TODO: add icon and refactor test
 const HeaderComponent = ({ style }: Props) => {
   return (
     <Animated.View style={[styles.container, style]}>
@@ -28,14 +26,7 @@ const HeaderComponent = ({ style }: Props) => {
             <IconBar />
           </View>
         </View>
-        <View
-          style={{
-            alignItems: 'flex-start',
-            justifyContent: 'flex-start',
-            flexDirection: 'row',
-            width: '100%',
-            paddingBottom: 25,
-          }}>
+        <View style={styles.textContainer}>
           <Text style={styles.text}>{greeting()}</Text>
         </View>
       </View>
@@ -81,6 +72,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     flexWrap: 'nowrap',
+  },
+  textContainer: {
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    flexDirection: 'row',
+    width: '100%',
+    paddingBottom: 25,
   },
   text: {
     color: theme.dark,
