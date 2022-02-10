@@ -4,4 +4,8 @@ export const theme = {
   white: '#ffffff',
   dark: '#404040',
   headerMain: '#E7EBEC',
+  lightOrange: '#F9D9B8',
+  lightBlue: '#E4ECF0',
+  lightGrayGreen: '#E9EEEB',
+  lightGreen: '#EDF8F4',
 }
