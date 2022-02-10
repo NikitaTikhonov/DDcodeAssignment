@@ -7,13 +7,14 @@ import {
 } from 'react-native'
 import React from 'react'
 
-interface Props {
+export interface Props {
   backgroundColor: string
   image: ImageSourcePropType
   title: string
+  onPress: () => void
 }
 
-const FoodCardComponent = ({ image, title, backgroundColor }: Props) => {
+const RectFoodCard = ({ image, title, backgroundColor }: Props) => {
   const background = { backgroundColor }
   return (
     <TouchableOpacity
@@ -25,24 +26,23 @@ const FoodCardComponent = ({ image, title, backgroundColor }: Props) => {
   )
 }
 
-export default FoodCardComponent
+export default RectFoodCard
 
 const styles = StyleSheet.create({
   container: {
-    width: 170,
-    height: 170,
+    width: 250,
+    height: 360,
     borderRadius: 10,
-    paddingBottom: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   image: {
-    width: '70%',
-    height: '65%',
+    width: '100%',
+    height: '70%',
     borderTopRightRadius: 10,
     borderTopLeftRadius: 10,
   },
   text: {
+    paddingTop: 10,
+    paddingLeft: 10,
     fontFamily: 'PublicSans-Medium',
     fontSize: 18,
   },

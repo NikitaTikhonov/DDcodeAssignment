@@ -6,18 +6,19 @@ import {
   TouchableOpacity,
 } from 'react-native'
 import React from 'react'
+import { theme } from '../../theme/theme'
 
-interface Props {
-  backgroundColor: string
+export interface Props {
   image: ImageSourcePropType
   title: string
+  onPress: () => void
 }
 
-const RectFoodCardComponent = ({ image, title, backgroundColor }: Props) => {
-  const background = { backgroundColor }
+const FoodCard = ({ image, title, onPress }: Props) => {
   return (
     <TouchableOpacity
-      style={[styles.container, background]}
+      onPress={onPress}
+      style={styles.container}
       activeOpacity={0.6}>
       <Image source={image} style={styles.image} />
       <Text style={styles.text}>{title}</Text>
@@ -25,23 +26,25 @@ const RectFoodCardComponent = ({ image, title, backgroundColor }: Props) => {
   )
 }
 
-export default RectFoodCardComponent
+export default FoodCard
 
 const styles = StyleSheet.create({
   container: {
     width: 170,
-    height: 250,
+    height: 170,
     borderRadius: 10,
+    paddingBottom: 10,
+    backgroundColor: theme.lightGreen,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   image: {
-    width: '100%',
-    height: '70%',
+    width: '70%',
+    height: '65%',
     borderTopRightRadius: 10,
     borderTopLeftRadius: 10,
   },
   text: {
-    paddingTop: 10,
-    paddingLeft: 10,
     fontFamily: 'PublicSans-Medium',
     fontSize: 18,
   },

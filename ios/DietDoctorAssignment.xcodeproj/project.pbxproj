@@ -19,7 +19,6 @@
 		413E7C080AC944ADB8C7AAB6 /* PublicSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 464711784CD543EF8A97B052 /* PublicSans-BlackItalic.ttf */; };
 		44D5746365C944149A96EFF3 /* PublicSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53AEDC68400742A88EB62202 /* PublicSans-Bold.ttf */; };
 		482E7B3B56CE4DA2900FB5C8 /* PublicSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E46AA2B63FE4440793CE0D11 /* PublicSans-LightItalic.ttf */; };
-		6BB2D49F187FC9161D02A824 /* libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF16F8BC2559EECC2F28323B /* libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		82D0B18BB0FA48C1B0752F84 /* PublicSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FF8793EAC9848EDB8D54996 /* PublicSans-Regular.ttf */; };
 		8418233648EF4009AE2E5EAD /* PublicSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB09F9BE295A4F1B9EBB5434 /* PublicSans-BoldItalic.ttf */; };
@@ -29,9 +28,10 @@
 		A229149AC72B49C59F7754FB /* PublicSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDFB6DEB8BA1411BB13A0F90 /* PublicSans-ExtraLightItalic.ttf */; };
 		B591FEDE5B2A4F9191367D5A /* PublicSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A05E28081BAA41C0B926F3F0 /* PublicSans-MediumItalic.ttf */; };
 		BDA3F3E0BC274AC98F397FAE /* PublicSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C407D7C4AAA4AF5A24EF571 /* PublicSans-ThinItalic.ttf */; };
+		C3FFA64AD817252F978F693B /* libPods-DietDoctorAssignment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92635048BDCE1955AA1727E3 /* libPods-DietDoctorAssignment.a */; };
+		C78CAF9171472202C3F5C364 /* libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23910483FE5A3DA2462B5729 /* libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a */; };
 		CC0EEEB9E628462E98267ADF /* PublicSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 548403D77F8F44599841845E /* PublicSans-SemiBold.ttf */; };
 		CE992E1051504496AADFC7FC /* PublicSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5483E636D9F840DA927B389F /* PublicSans-ExtraBold.ttf */; };
-		D0989F44F609014707D6C3B1 /* libPods-DietDoctorAssignment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FFF589C9CBFE839C76AA00 /* libPods-DietDoctorAssignment.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,25 +57,25 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DietDoctorAssignment/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DietDoctorAssignment/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DietDoctorAssignment/main.m; sourceTree = "<group>"; };
-		17DFB4C272D212BE5FEBC959 /* Pods-DietDoctorAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DietDoctorAssignment.release.xcconfig"; path = "Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		23910483FE5A3DA2462B5729 /* libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF8793EAC9848EDB8D54996 /* PublicSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-Regular.ttf"; path = "../assets/fonts/PublicSans-Regular.ttf"; sourceTree = "<group>"; };
 		464711784CD543EF8A97B052 /* PublicSans-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-BlackItalic.ttf"; path = "../assets/fonts/PublicSans-BlackItalic.ttf"; sourceTree = "<group>"; };
-		47260F270C7BEFDC1DC3F031 /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DietDoctorAssignment-DietDoctorAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
-		49C2F461401857672BAE9F5F /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DietDoctorAssignment-DietDoctorAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		4D1DDACC156640ED9ACD8A82 /* PublicSans-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-ExtraLight.ttf"; path = "../assets/fonts/PublicSans-ExtraLight.ttf"; sourceTree = "<group>"; };
 		53AEDC68400742A88EB62202 /* PublicSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-Bold.ttf"; path = "../assets/fonts/PublicSans-Bold.ttf"; sourceTree = "<group>"; };
 		5483E636D9F840DA927B389F /* PublicSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-ExtraBold.ttf"; path = "../assets/fonts/PublicSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		548403D77F8F44599841845E /* PublicSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-SemiBold.ttf"; path = "../assets/fonts/PublicSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		7D8434D4C6F66B45C95ABCD1 /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DietDoctorAssignment-DietDoctorAssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FA5A9EC55311526E16279F5 /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DietDoctorAssignment-DietDoctorAssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DietDoctorAssignment/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92635048BDCE1955AA1727E3 /* libPods-DietDoctorAssignment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DietDoctorAssignment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05E28081BAA41C0B926F3F0 /* PublicSans-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-MediumItalic.ttf"; path = "../assets/fonts/PublicSans-MediumItalic.ttf"; sourceTree = "<group>"; };
 		AD09AD82EBC341BBBEDB3436 /* PublicSans-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-Thin.ttf"; path = "../assets/fonts/PublicSans-Thin.ttf"; sourceTree = "<group>"; };
-		AF16F8BC2559EECC2F28323B /* libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D01BD0CF464C2BBEDCCF6D /* PublicSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-Medium.ttf"; path = "../assets/fonts/PublicSans-Medium.ttf"; sourceTree = "<group>"; };
 		BB09F9BE295A4F1B9EBB5434 /* PublicSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-BoldItalic.ttf"; path = "../assets/fonts/PublicSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		C0C310E7BC04406192C81A2C /* PublicSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-SemiBoldItalic.ttf"; path = "../assets/fonts/PublicSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		C19ED8596DE332763B5E9354 /* Pods-DietDoctorAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DietDoctorAssignment.debug.xcconfig"; path = "Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment.debug.xcconfig"; sourceTree = "<group>"; };
-		C9FFF589C9CBFE839C76AA00 /* libPods-DietDoctorAssignment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DietDoctorAssignment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD42E035A486920BA204242D /* Pods-DietDoctorAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DietDoctorAssignment.debug.xcconfig"; path = "Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		D4FD84FFECFC4511A01FCE9C /* PublicSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-Italic.ttf"; path = "../assets/fonts/PublicSans-Italic.ttf"; sourceTree = "<group>"; };
+		D94ECE0D55F3AA021BC0CB51 /* Pods-DietDoctorAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DietDoctorAssignment.release.xcconfig"; path = "Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment.release.xcconfig"; sourceTree = "<group>"; };
 		DDFB6DEB8BA1411BB13A0F90 /* PublicSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-ExtraLightItalic.ttf"; path = "../assets/fonts/PublicSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		E1CCE9E099B845C59A28CF81 /* PublicSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-Light.ttf"; path = "../assets/fonts/PublicSans-Light.ttf"; sourceTree = "<group>"; };
 		E46AA2B63FE4440793CE0D11 /* PublicSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "PublicSans-LightItalic.ttf"; path = "../assets/fonts/PublicSans-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BB2D49F187FC9161D02A824 /* libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a in Frameworks */,
+				C78CAF9171472202C3F5C364 /* libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0989F44F609014707D6C3B1 /* libPods-DietDoctorAssignment.a in Frameworks */,
+				C3FFA64AD817252F978F693B /* libPods-DietDoctorAssignment.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				C9FFF589C9CBFE839C76AA00 /* libPods-DietDoctorAssignment.a */,
-				AF16F8BC2559EECC2F28323B /* libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a */,
+				92635048BDCE1955AA1727E3 /* libPods-DietDoctorAssignment.a */,
+				23910483FE5A3DA2462B5729 /* libPods-DietDoctorAssignment-DietDoctorAssignmentTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,10 +177,10 @@
 		A12C1485F0446EF1EBA64941 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C19ED8596DE332763B5E9354 /* Pods-DietDoctorAssignment.debug.xcconfig */,
-				17DFB4C272D212BE5FEBC959 /* Pods-DietDoctorAssignment.release.xcconfig */,
-				47260F270C7BEFDC1DC3F031 /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.debug.xcconfig */,
-				49C2F461401857672BAE9F5F /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.release.xcconfig */,
+				CD42E035A486920BA204242D /* Pods-DietDoctorAssignment.debug.xcconfig */,
+				D94ECE0D55F3AA021BC0CB51 /* Pods-DietDoctorAssignment.release.xcconfig */,
+				7D8434D4C6F66B45C95ABCD1 /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.debug.xcconfig */,
+				7FA5A9EC55311526E16279F5 /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -217,12 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "DietDoctorAssignmentTests" */;
 			buildPhases = (
-				898244C617734ACC529C3187 /* [CP] Check Pods Manifest.lock */,
+				910BDB389B5268083C105895 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				64FECF153D91D55ED85FF250 /* [CP] Embed Pods Frameworks */,
-				70DFAFCFA922ED26CED08577 /* [CP] Copy Pods Resources */,
+				809B9AB3B9FDB1DDEF61F86E /* [CP] Embed Pods Frameworks */,
+				DC19E22C581EA79BA3AA8FEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,14 +238,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DietDoctorAssignment" */;
 			buildPhases = (
-				DE08C91BE17CBB3BF4D9258B /* [CP] Check Pods Manifest.lock */,
+				35169D964009650AF1ECC4A5 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				6B12C8C46EFEC2C1343E4994 /* [CP] Embed Pods Frameworks */,
-				28E491399DF2E59B61253948 /* [CP] Copy Pods Resources */,
+				0682B65D733FFAE8D6EEFC6B /* [CP] Embed Pods Frameworks */,
+				2755320FEC865A30F429B4A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,41 +344,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		28E491399DF2E59B61253948 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		64FECF153D91D55ED85FF250 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6B12C8C46EFEC2C1343E4994 /* [CP] Embed Pods Frameworks */ = {
+		0682B65D733FFAE8D6EEFC6B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,24 +361,63 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		70DFAFCFA922ED26CED08577 /* [CP] Copy Pods Resources */ = {
+		2755320FEC865A30F429B4A0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment/Pods-DietDoctorAssignment-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		898244C617734ACC529C3187 /* [CP] Check Pods Manifest.lock */ = {
+		35169D964009650AF1ECC4A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DietDoctorAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		809B9AB3B9FDB1DDEF61F86E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		910BDB389B5268083C105895 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -434,26 +439,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE08C91BE17CBB3BF4D9258B /* [CP] Check Pods Manifest.lock */ = {
+		DC19E22C581EA79BA3AA8FEF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DietDoctorAssignment-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DietDoctorAssignment-DietDoctorAssignmentTests/Pods-DietDoctorAssignment-DietDoctorAssignmentTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -508,7 +508,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47260F270C7BEFDC1DC3F031 /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.debug.xcconfig */;
+			baseConfigurationReference = 7D8434D4C6F66B45C95ABCD1 /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -535,7 +535,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49C2F461401857672BAE9F5F /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.release.xcconfig */;
+			baseConfigurationReference = 7FA5A9EC55311526E16279F5 /* Pods-DietDoctorAssignment-DietDoctorAssignmentTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -559,7 +559,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C19ED8596DE332763B5E9354 /* Pods-DietDoctorAssignment.debug.xcconfig */;
+			baseConfigurationReference = CD42E035A486920BA204242D /* Pods-DietDoctorAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -586,7 +586,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17DFB4C272D212BE5FEBC959 /* Pods-DietDoctorAssignment.release.xcconfig */;
+			baseConfigurationReference = D94ECE0D55F3AA021BC0CB51 /* Pods-DietDoctorAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

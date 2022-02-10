@@ -1,44 +1,34 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
-import FoodCardContainer, {
-  CardType,
-} from '../../components/foodCard/foodCardContainer'
+
+import GuidesList from '../../components/guidesList'
 import RealResultsListContainer from '../../components/resultsList/realResultsListContainer'
 import SurveyContainer from '../../components/survey/surveyContainer'
+import VisualGuidesList from '../../components/visualGuidesList'
 import { theme } from '../../theme/theme'
 import HomepageSection from './homepageSection'
 
-const image = require('../../../assets/images/vegetables.jpeg')
-const avocado = require('../../../assets/images/avocado.png')
-
 const resultsHeader = 'Real people, real\results'
+const guidesHeader = 'Discover and\nlearn'
+const visualGuides = 'Visual guides'
 
 const BodyComponent = (): JSX.Element => {
   return (
     <View style={styles.shadowHider}>
       <View style={styles.main}>
-        <FoodCardContainer
-          variant={CardType.Rect}
-          image={image}
-          backgroundColor={theme.lightBlue}
-          title={'Vegetables'}
-        />
-        <View style={{ height: 30 }} />
-        <SurveyContainer />
-        <View style={{ height: 30 }} />
-        <FoodCardContainer
-          variant={CardType.Square}
-          image={avocado}
-          backgroundColor={theme.lightGreen}
-          title={'Keto Guide'}
-        />
-
-        <FoodCardContainer
-          variant={CardType.Square}
-          image={avocado}
-          backgroundColor={theme.lightGreen}
-          title={'Keto Guide'}
-        />
+        <HomepageSection
+          title={visualGuides}
+          containerStyle={styles.visualGuidesSection}>
+          <VisualGuidesList />
+        </HomepageSection>
+        <View style={{ marginTop: 60 }}>
+          <SurveyContainer />
+        </View>
+        <HomepageSection
+          title={guidesHeader}
+          containerStyle={styles.guidesSection}>
+          <GuidesList />
+        </HomepageSection>
         <HomepageSection
           title={resultsHeader}
           containerStyle={styles.resultSection}>
@@ -70,6 +60,13 @@ const styles = StyleSheet.create({
     paddingTop: 1,
 
     backgroundColor: theme.headerMain,
+  },
+  visualGuidesSection: {
+    height: 420,
+  },
+  guidesSection: {
+    marginTop: 60,
+    height: 250,
   },
   resultSection: {
     marginTop: 60,
