@@ -21,7 +21,7 @@ const BodyComponent = (): JSX.Element => {
           containerStyle={styles.visualGuidesSection}>
           <VisualGuidesList />
         </HomepageSection>
-        <View style={{ marginTop: 60, paddingHorizontal: 10 }}>
+        <View style={styles.surveySection}>
           <SurveyContainer />
         </View>
         <HomepageSection
@@ -64,9 +64,13 @@ const styles = StyleSheet.create({
   visualGuidesSection: {
     height: 420,
   },
+  surveySection: {
+    marginTop: 60,
+    paddingHorizontal: 10,
+  },
   guidesSection: {
     marginTop: 60,
-    height: 250,
+    height: 290,
   },
   resultSection: {
     marginTop: 60,

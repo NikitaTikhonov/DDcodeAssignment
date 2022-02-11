@@ -9,4 +9,3 @@ export const RootNavigator = (): JSX.Element => {
     </NavigationContainer>
   )
 }
-//tsrnfc

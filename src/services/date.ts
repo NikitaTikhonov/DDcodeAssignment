@@ -19,7 +19,7 @@ export const greeting = () => {
 }
 
 class Greeting {
-  private _greeting: string
+  private readonly _greeting: string
   private readonly morning = 'Good morning'
   private readonly evening = 'Good evening'
   private readonly afternoon = 'Good afternoon'

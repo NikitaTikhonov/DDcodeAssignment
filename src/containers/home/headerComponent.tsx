@@ -14,7 +14,7 @@ import IconBar from './iconBar'
 interface Props {
   style: ReturnType<typeof useAnimatedStyle>
 }
-//TODO: add icon and refactor test
+
 const HeaderComponent = ({ style }: Props) => {
   return (
     <Animated.View style={[styles.container, style]}>

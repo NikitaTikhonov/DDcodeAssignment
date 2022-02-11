@@ -33,8 +33,8 @@ export default FoodCard
 
 const styles = StyleSheet.create({
   container: {
-    width: 170,
-    height: 170,
+    width: 230,
+    height: 230,
     borderRadius: 10,
     paddingBottom: 10,
     backgroundColor: theme.lightGreen,
