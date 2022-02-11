@@ -22,7 +22,7 @@
 ## Installation
 The app was developed uder M1 so pod command installs pod for -x86_64 arch
 ```sh
-cd DDietDoctorAssignment
+cd DDcodeAssignment
 yarn
 yarn pod
 yarn ios 
